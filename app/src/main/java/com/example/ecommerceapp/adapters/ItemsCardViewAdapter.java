@@ -56,6 +56,7 @@ public class ItemsCardViewAdapter extends RecyclerView.Adapter<ItemsCardViewAdap
         textViewPrice.setText(dataSetItem.getPrice());
         Glide.with(mContext).load(dataSetItem.getImage()).into(imageItem);
 
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -61,13 +61,13 @@ public class EditItemActivity extends AppCompatActivity implements View.OnClickL
             buttonUpdate = findViewById(R.id.buttonUpdate);
             buttonUpdate.setOnClickListener(this);
 
-            if (getSupportActionBar() != null) {
-                getSupportActionBar().setTitle("Update");
-                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            }
-
             ItemData itemData = (ItemData) getIntent().getSerializableExtra(OBJECT_KEY);
             productId = itemData.getId();
+
+            if (getSupportActionBar() != null) {
+                getSupportActionBar().setTitle(itemData.getName());
+                getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

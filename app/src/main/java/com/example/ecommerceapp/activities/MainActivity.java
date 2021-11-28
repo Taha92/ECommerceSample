@@ -1,30 +1,20 @@
-package com.example.ecommerceapp;
+package com.example.ecommerceapp.activities;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ecommerceapp.activities.EditItemActivity;
+import com.example.ecommerceapp.R;
 import com.example.ecommerceapp.adapters.ItemsCardViewAdapter;
 import com.example.ecommerceapp.http.RestService;
 import com.example.ecommerceapp.models.ItemData;
