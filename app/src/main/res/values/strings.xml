@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ecommerce App</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_enter_product_name">Please enter product name</string>
+    <string name="text_enter_product_price">Please enter product price</string>
+
+</resources>
